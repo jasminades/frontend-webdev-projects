@@ -1,0 +1,53 @@
+[
+      {
+        "year": 2021,
+        "competition": "Regional Championship",
+        "title": "Champion",
+        "winner": "John Smith",
+        "prize": "Gold Medal"
+      },
+      {
+        "year": 2020,
+        "competition": "National Boxing Tournament",
+        "title": "Runner-up",
+        "winner": "Emma Johnson",
+        "prize": "Silver Medal"
+      },
+      {
+        "year": 2019,
+        "competition": "Interclub Sparring Challenge",
+        "title": "Best Technical Fighter",
+        "winner": "Michael Williams",
+        "prize": "Certificate of Achievement"
+      },
+      {
+        "year": 2018,
+        "competition": "State Boxing Championship",
+        "title": "Most Valuable Boxer",
+        "winner": "Sophia Martinez",
+        "prize": "Trophy"
+      },
+      {
+        "year": 2017,
+        "competition": "City Boxing Invitational",
+        "title": "Outstanding Boxer",
+        "winner": "Daniel Brown",
+        "prize": "Bronze Medal"
+      },
+      {
+        "year": 2016,
+        "competition": "Regional Amateur Boxing Tournament",
+        "title": "Best Knockout",
+        "winner": "Olivia Davis",
+        "prize": "Plaque"
+      },
+      {
+        "year": 2015,
+        "competition": "National Boxing Championship",
+        "title": "Most Promising Boxer",
+        "winner": "Liam Wilson",
+        "prize": "Recognition Award"
+      }
+    
+  
+    ]
