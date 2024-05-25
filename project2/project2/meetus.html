@@ -4,26 +4,23 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Boxing Club Southpaw</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     
 <style>
-  body{
-    background-color: black;
-  }
   .gallery-container {
   display: flex;
-  justify-content: center; 
-  align-items: center; 
-  height: 100vh;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Adjust as needed */
 }
   .gallery {
-  --g: 6px; 
+  --g: 6px; /* the gap */
   margin-top:20rem;
   margin-bottom:20rem;
   display: grid;
-  width: 900px; 
+  width: 900px; /* the size */
   aspect-ratio: 1;
   grid: auto-flow 1fr/repeat(3,1fr);
   gap: var(--g);
@@ -50,7 +47,7 @@
 }
 
 .join__card:hover .join__card__content img {
-  transform: scale(2.2); 
+  transform: scale(2.2); /* Adjust the scale factor as needed */
   z-index: 1;
 }
 .join__card__content img {
@@ -59,14 +56,14 @@
   object-fit: cover;
   transition: transform 0.1s ease;
 }
-
+/* Additional styling for the pop-up effect */
 .join__card:hover::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: 0; /* Adjust the background color and opacity as needed */
   z-index: 2;
   transition: background-color 0.3s ease;
   border-radius: 5px;
@@ -76,13 +73,30 @@
   <body>
 
 
-      <section id="meetuspage">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">southpaw</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="boxing2.html">Home</a>
+            <a class="nav-item nav-link" href="#work">Work</a>
+            <a class="nav-item nav-link active" href="meetus.html">Team</a>
+            <a class="nav-item nav-link" href="team.html">Coaches</a>
+            <a class="nav-item nav-link" href="plans.html">Training Plans</a>
+            <a class="nav-item nav-link" href="contact.html">Contact</a>
+           
+          </div>
+        </div>
+      </nav>
+
     <h1 class="meetUs">meet the team</h1>
     <p class="meet-text">
         Our diverse membership base creates a friendly and supportive
         atmosphere, where you can make friends and stay motivated.
       </p>
-    <section class="section__container join__container" id="meetuspage">
+    <section class="section__container join__container" id="team">
     
       
       <div class="join__image">
@@ -163,26 +177,49 @@
       <div id="achievements-list"></div>
     </div>
   </section>
-</section>
-   
-    <script src="../js/fetch.js"></script>
-    <script src="../js/formvalidation.js"></script>
-    <script src="../js/jquery.spapp.js"></script>
-    <script src="../js/jquery.spapp.min.js"></script>
-    <script src="../js/pageload.js"></script>
-    <script src="../js/script.js"></script>
     
+   
+
+    <footer class="section__container footer__container">
+      <span class="bg__blur"></span>
+      <span class="bg__blur footer__blur"></span>
+      <div class="footer__col">
+        <div class="footer__logo"><img src="images/southpaw.PNG" alt="logo" /></div>
+        <p>
+            "Step into the ring and take the first swing towards a fitter, stronger version of yourself with our unbeatable pricing plans. 
+            Let's lace up, sweat it out, and conquer every round together! Join our boxing community today and unleash your inner champion.
+        </p>
+        <div class="footer__socials">
+          <a href="#"><i class="ri-facebook-fill"></i></a>
+          <a href="#"><i class="ri-instagram-line"></i></a>
+          <a href="#"><i class="ri-twitter-fill"></i></a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4>Events</h4>
+        <a href="#">Boxing Camps</a>
+        <a href="#">Tournaments</a>
+        <a href="#">Group Trainings</a>
+      </div>
+      <div class="footer__col">
+        <h4>Join Us</h4>
+        <a href="#">Become Our Member</a>
+        <a href="#">Book an Introduction Class</a>
+        <a href="#">Choose Your Training Plan</a>
+      </div>
+      <div class="footer__col">
+        <h4>Get In Touch</h4>
+        <a href="#">Contact Us</a>
+        <a href="#">Our Board</a>
+      </div>
+    </footer>
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  
+    <script src="js/fetch.js"></script>
   <script>
      $(document).ready(() => {
     getAchievements();
     });
   </script>
-
-
-
-
   </body>
 </html>

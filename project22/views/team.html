@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="/project2/css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <title> Boxing Club Southpaw</title>
+
+
+    <style>
+      
+    </style>
+  </head>
+  <body>
+
+
+
+      <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+      </div>
+
+
+    <section class="explore__container" id="work">
+        <h2 class="section__header"> Our Team</h2>
+
+        <p class="coaches-text">"Meet our team of coaches, a dedicated group of professionals who are passionate about helping you achieve your fitness and boxing goals. With years of experience and expertise in their respective fields, our coaches are committed to providing personalized guidance and support to every member. Whether you're a beginner looking to learn the fundamentals or an experienced boxer aiming to hone your skills, our team is here to motivate, inspire, and guide you on your journey to success. Get ready to train with the best and unleash your full potential with our exceptional team of coaches.</p>
+    
+      <div class="explore__grid">
+        <div class="explore__card">
+            <span><img src="images/our-team.jpg" class="work-images"></i></span>
+          <h4>Muhammad Ali</h4>
+          <p>
+            Elevate your skills with our top-notch training equipment
+          </p>
+          <a href="contact.html">Get In Touch<i class="ri-arrow-right-line"></i></a>
+        </div>
+        <div class="explore__card">
+          <span><img src="images/our-team5.jpg" class="work-images"></i></span>
+          <h4>Zeina Nassar</h4>
+          <p>
+            Embark on a journey to become a boxing champion. Strengthen your mental game and overcome challenges.
+          </p>
+          <a href="contact.html">Get In Touch<i class="ri-arrow-right-line"></i></a>
+        </div>
+        <div class="explore__card">
+            <span><img src="images/our-team7.jpg" class="work-images"></i></span>
+          <h4>Rocky Marciano</h4>
+          <p>
+            Compete at the most prestigious boxing competitions. Strengthen your mental game and overcome challenges.
+          </p>
+          <a href="contact.html">Get In Touch <i class="ri-arrow-right-line"></i></a>
+        </div>
+        <div class="explore__card">
+            <span><img src="images/our-team4.jpg" class="work-images"></i></span>
+          <h4>Christina Hammer</h4>
+          <p>
+            Join our immersive boxing camps  where members can intensively train, learn from professional boxers, and bond with fellow enthusiasts in a retreat setting.
+          </p>
+          <a href="contact.html">Get In Touch</a>
+        </div>
+        <div class="explore__card">
+            <span><img src="images/our-team2.jpg" class="work-images"></i></span>
+          <h4>Mike Tyson</h4>
+          <p>
+            Join our personalized coaching sessions offered by experienced trainers to enhance members' boxing skills and techniques.
+          </p>
+          <a href="contact.html">Get In Touch <i class="ri-arrow-right-line"></i></a>
+        </div>
+        <div class="explore__card">
+            <span><img src="images/our-team6.jpg" class="work-images"></i></span>
+          <h4>Laila Ali</h4>
+          <p>
+            Sharpen your skills and techniques in our intensive sparring sessions and perfect your boxing technique under the guidance of expert coaches.
+          </p>
+          <a href="contact.html">Get In Touch <i class="ri-arrow-right-line"></i></a>
+        </div>
+        
+      </div>
+    </section>
+
+
+  
+    <script src="./../js/fetch.js"></script>
+    <script src="./../js/jquery.spapp.js"></script>
+    <script src="./../js/jquery.spapp.min.js"></script>
+    <script src="./../js/formvalidation.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  var modal = document.getElementById("myModal");
+
+  var imgs = $(".work-images");
+  var modalImg = $("#img01");
+  imgs.click(function(){
+    modal.style.display = "block";
+    var newSrc = this.src;
+    modalImg.attr('src', newSrc);
+  });
+
+ 
+  var span = document.getElementsByClassName("close")[0];
+
+  // close on x
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  // close on anywhere else
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+});
+</script>
+
+  </body>
+</html>

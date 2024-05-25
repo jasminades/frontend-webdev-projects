@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <title> Boxing Club Southpaw</title>
+    <title>Member Dashboard</title>
+    <style>
+        /* Add your custom styles for the coach dashboard here */
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+}
+
+    </style>>
+</head>
+<body>
+    <section id="coachpage">
+    <header>
+        <h1>Welcome, Member!</h1>
+        <!-- Add any coach-specific content here -->
+    </header>
+    <nav>
+        <!-- Add navigation links for coach-specific actions -->
+        <ul>
+            <li><a href="#">View Training Plans</a></li>
+            <li><a href="#" onclick="UserService.logout()">Logout</a></li>
+        </ul>
+    </nav>
+
+
+    <main>
+        <p>This is the member dashboard. You can manage training plans, the team, and schedule sessions here.</p>
+    </main>
+    <!-- Include any necessary JavaScript files -->
+
+</section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="./../js/fetch.js"></script>
+      <script src="./../js/jquery.spapp.js"></script>
+      <script src="./../js/jquery.spapp.min.js"></script>
+      <script src="./../js/formvalidation.js"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="./../services/user-service.js"></script>
+</body>
+</html>
