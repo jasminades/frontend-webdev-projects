@@ -6,6 +6,43 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Boxing Club Southpaw</title>
+    <style>
+      body {
+    transition: background-color 0.3s, color 0.3s;
+    font-family: Arial, sans-serif;
+}
+
+.dark-theme {
+    background-color: rgb(109, 22, 22);
+    color: black;
+}
+
+.light-theme {
+    background-color: black;
+    color: white;
+}
+
+.normal-font {
+    font-size: 16px;
+}
+
+.large-font {
+    font-size: 20px;
+}
+
+.theme-switcher {
+    margin: 20px;
+    text-align: center;
+}
+
+.theme-switcher button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: rgb(116, 12, 12);
+    color:white;
+}
+    </style>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -26,6 +63,12 @@
         </div>
     </div>
 </nav>
+
+<!-- Theme Switcher Buttons -->
+<div class="theme-switcher">
+  <button id="themeButton">Switch Theme</button>
+  <button id="fontSizeButton">Toggle Font Size</button>
+</div>
 
 <header class="section__container header__container">
     <div class="header__content">
@@ -215,7 +258,7 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="./js/jquery.spapp.js"></script>
 <script>
-  $(document).ready(function () {
+ $(document).ready(function () {
       let app = $.spapp({
           templateDir: "./views/",
           cache: false,
@@ -240,6 +283,19 @@
       $('.faq-item .toggle-btn').click(function() {
           $(this).next('.answer').slideToggle();
           $(this).toggleClass('active');
+      });
+
+      // Theme Switcher
+      const body = $('body');
+      const themeButton = $('#themeButton');
+      const fontSizeButton = $('#fontSizeButton');
+
+      themeButton.click(function () {
+          body.toggleClass('dark-theme');
+      });
+
+      fontSizeButton.click(function () {
+          body.toggleClass('large-font');
       });
   });
 </script>
